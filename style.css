@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
 body {
   height: 100vh;
   width: 100vw;
@@ -16,7 +20,7 @@ body {
   );
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 .maincard {
   display: flex;
@@ -26,7 +30,7 @@ body {
   height: 50rem;
   width: 90rem;
   border-radius: 2rem;
-  box-shadow: 0px 60px 100px -50px hsl(259, 44%, 29%);
+  box-shadow: 0px 60px 100px -45px hsl(259, 44%, 29%);
 }
 
 .leftcard {
@@ -59,8 +63,32 @@ body {
 }
 
 .rightcard {
+  margin-left: 7.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 100%;
   width: 50%;
-  border: solid red;
+  /* border: solid red; */
   border-radius: 2rem;
+}
+h1 {
+  font-size: 50px;
+
+  padding-bottom: 4rem;
+  margin-top: -8rem;
+}
+.dropdown {
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  border-bottom: solid hsl(240, 5%, 91%);
+  padding: 1.5rem 0rem;
+}
+.dropdown > img {
+  height: 0.6rem;
+  margin-right: 1.5rem;
+  align-self: center;
 }
