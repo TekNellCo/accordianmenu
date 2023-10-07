@@ -63,7 +63,7 @@ body {
 }
 
 .rightcard {
-  margin-left: 7.3rem;
+  margin-left: 10.3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -73,22 +73,55 @@ body {
   border-radius: 2rem;
 }
 h1 {
+  position: fixed;
+  top: 200px;
   font-size: 50px;
-
   padding-bottom: 4rem;
-  margin-top: -8rem;
+  margin-top: -5rem;
 }
 .dropdown {
   cursor: pointer;
   text-align: center;
   display: flex;
   justify-content: space-between;
-  width: 75%;
+  width: 80%;
   border-bottom: solid hsl(240, 5%, 91%);
   padding: 1.5rem 0rem;
+  position: relative;
+  color: hsl(237, 12%, 33%);
+  font-weight: 400;
+  height: 4.5rem;
+
+  transition: height 250ms ease-in-out, font-weight 250ms ease-in-out;
+}
+.dropdown p {
+  pointer-events: none;
+}
+.dropdown.active {
+  height: 8rem;
+  font-weight: 700;
 }
 .dropdown > img {
+  pointer-events: none;
   height: 0.6rem;
   margin-right: 1.5rem;
-  align-self: center;
+  /* align-self: center; */
+  transition: transform 200ms ease-in-out;
+}
+.dropdown.active > img {
+  transform: rotate(-180deg);
+}
+.dropdown > p.hidden {
+  text-align: left;
+  width: 90%;
+  display: flex;
+  opacity: 0;
+  position: absolute;
+  margin-top: 2rem;
+  transition: opacity 200ms ease-in-out;
+  color: hsl(240, 6%, 50%);
+  font-weight: 400;
+}
+.dropdown.active > p.hidden {
+  opacity: 1;
 }
