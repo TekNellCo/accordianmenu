@@ -16,7 +16,7 @@ body {
   );
   display: flex;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
 }
 .maincard {
   display: flex;
@@ -26,6 +26,7 @@ body {
   height: 50rem;
   width: 90rem;
   border-radius: 2rem;
+  box-shadow: 0px 60px 100px -50px hsl(259, 44%, 29%);
 }
 
 .leftcard {
@@ -42,20 +43,24 @@ body {
   position: absolute;
   z-index: 3;
   height: 19rem;
-  transform: translate(-11.5rem, 3.8em);
+  transform: translate(-10.8rem, 5.4em);
 }
 .woman {
   position: absolute;
   height: 37rem;
-  transform: translate(-10.8rem, 5.5rem);
+  transform: translate(-8.8rem, 5.5rem);
   z-index: 2;
 }
 .womanbackground {
   height: 95rem;
   position: absolute;
   z-index: 1;
-  transform: translate(-59.3rem, -55rem);
+  transform: translate(-57.3rem, -30rem);
 }
 
 .rightcard {
+  height: 100%;
+  width: 50%;
+  border: solid red;
+  border-radius: 2rem;
 }
