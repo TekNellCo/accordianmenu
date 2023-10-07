@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(
+    to bottom,
+    hsl(273, 75%, 66%),
+    hsl(240, 73%, 65%)
+  );
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.maincard {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #ffffff;
+  height: 50rem;
+  width: 90rem;
+  border-radius: 2rem;
+}
+
+.leftcard {
+  position: relative;
+
+  border-radius: 2rem;
+
+  z-index: 0;
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+}
+.floatingbox {
+  position: absolute;
+  z-index: 3;
+  height: 19rem;
+  transform: translate(-11.5rem, 3.8em);
+}
+.woman {
+  position: absolute;
+  height: 37rem;
+  transform: translate(-10.8rem, 5.5rem);
+  z-index: 2;
+}
+.womanbackground {
+  height: 95rem;
+  position: absolute;
+  z-index: 1;
+  transform: translate(-59.3rem, -55rem);
+}
+
+.rightcard {
+}
