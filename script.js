@@ -14,5 +14,5 @@ document.addEventListener("click", (e) => {
         drop.classList.remove("active");
       }
     });
-  } else console.log("doesnt work");
+  }
 });
