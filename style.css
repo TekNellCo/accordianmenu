@@ -20,7 +20,7 @@ body {
   );
   display: flex;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
 }
 .maincard {
   display: flex;
@@ -71,9 +71,10 @@ body {
   width: 50%;
   /* border: solid red; */
   border-radius: 2rem;
+  position: relative;
 }
 h1 {
-  position: fixed;
+  position: absolute;
   top: 200px;
   font-size: 50px;
   padding-bottom: 4rem;
@@ -95,7 +96,10 @@ h1 {
   transition: height 250ms ease-in-out, font-weight 250ms ease-in-out;
 }
 .dropdown p {
-  pointer-events: none;
+  /* pointer-events: none; */
+}
+.dropdown p:hover {
+  color: #f47b56;
 }
 .dropdown.active {
   height: 8rem;
@@ -106,7 +110,7 @@ h1 {
   height: 0.6rem;
   margin-right: 1.5rem;
   /* align-self: center; */
-  transition: transform 200ms ease-in-out;
+  transition: transform 250ms ease-in-out;
 }
 .dropdown.active > img {
   transform: rotate(-180deg);
