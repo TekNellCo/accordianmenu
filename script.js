@@ -1,18 +1,20 @@
-document.addEventListener("click", (e) => {
-  const dropDown = e.target.matches(".dropdown");
-  const question = e.target.matches(".question");
-  let dropDownAll = document.querySelectorAll(".dropdown");
+// Select the element with the class "rightcard" to add a click event handler to it
+const elRightCard = document.querySelector(".rightcard");
 
-  let currentDropdown;
+// Optimize the page by reducing the clickable area for click events
 
-  if (dropDown || question) {
-    let currentDropdown = e.target.closest(".dropdown");
-    currentDropdown.classList.toggle("active");
+elRightCard.addEventListener("click", (e) => {
+  // Find all elements with the class "dropdown"
+  const dropDownAll = document.querySelectorAll(".dropdown");
 
-    dropDownAll.forEach((drop) => {
-      if (currentDropdown !== drop) {
-        drop.classList.remove("active");
-      }
-    });
-  } else console.log("doesnt work");
+  // Find the closest "dropdown" element to the clicked element
+  const currentDropdown = e.target.closest(".dropdown");
+
+  // Collapse all "dropdown" elements except the one that was clicked (currentDropdown)
+  dropDownAll.forEach((drop) => currentDropdown !== drop && drop.classList.remove("active"));
+
+  // Expand or collapse the current "dropdown" that was clicked
+  currentDropdown.classList.toggle("active");
 });
+
+// This code eliminates the need to use "data-dropdown" attributes in the index.html file
