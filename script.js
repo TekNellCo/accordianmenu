@@ -1,4 +1,4 @@
-// Select the element with the class "rightcard" to add a click event handler to it
+
 const elRightCard = document.querySelector(".rightcard");
 
 // Optimize the page by reducing the clickable area for click events
