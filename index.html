@@ -5,32 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <script src="script.js" defer></script>
+    <!-- We use the defer attribute to ensure that the script is loaded after all the HTML has been processed, so that all HTML elements exist before the script begins its execution.    <link rel="preconnect" href="https://fonts.googleapis.com" /> -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700;900&display=swap" rel="stylesheet" />
   </head>
   <body>
     <div class="maincard">
-      <img
-        class="floatingbox"
-        src="./images/illustration-box-desktop.svg"
-        alt=""
-      />
+      <img class="floatingbox" src="./images/illustration-box-desktop.svg" alt="" />
       <div class="leftcard">
-        <img
-          class="woman"
-          src="./images/illustration-woman-online-desktop.svg"
-          alt=""
-        />
-        <img
-          class="womanbackground"
-          src="./images/bg-pattern-desktop.svg"
-          alt=""
-        />
+        <img class="woman" src="./images/illustration-woman-online-desktop.svg" alt="" />
+        <img class="womanbackground" src="./images/bg-pattern-desktop.svg" alt="" />
       </div>
       <div class="rightcard">
         <h1>FAQ</h1>
@@ -42,10 +27,7 @@
         <div class="dropdown" data-dropdown>
           <p class="question">What is the maximum file upload size?</p>
           <img src="./images/icon-arrow-down.svg" alt="" />
-          <p class="hidden">
-            No more than 2GB. All files in your account must fit your allotted
-            storage space.
-          </p>
+          <p class="hidden">No more than 2GB. All files in your account must fit your allotted storage space.</p>
         </div>
         <div class="dropdown" data-dropdown>
           <p class="question">How do I reset my password?</p>
@@ -63,6 +45,8 @@
         <div class="dropdown" data-dropdown>
           <p class="question">Do you provide additional support?</p>
           <img src="./images/icon-arrow-down.svg" alt="" />
+
+          <p class="hidden">Yes, our operators are here to assist you M-F 8am to 9pm.</p>
           <p class="hidden">
             question Yes, our operators are here to assist you M-F 8am to 9pm.
           </p>
